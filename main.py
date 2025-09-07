@@ -2,22 +2,22 @@ import sys
 
 from api_request import *
 from ui import *
-from Paket/paket_xut import get_package_xut
+from paket_xut import get_package_xut
 from my_package import fetch_my_packages
-from Paket/bebas_puas import get_package_bebas
-from Paket/xtra_combo_mini import get_package_xcm
-from Paket/spesial_for_you import get_package_sfy
-from Paket/edukasi import get_package_edu
-from Paket/xtra_combo_old import get_package_xco
-from Paket/bonus_xcp import get_package_bxcp
-from Paket/xcp_xcv import get_package_xcpv
-from Paket/bonus_prepaid import get_package_bp
-from Paket/hotrod_baru import get_package_hb
-from Paket/pilkada_damai import get_package_pd
-from Paket/xl_reward import get_package_xr
-from Paket/bundling import get_package_bun
-from Paket/bonus_akrab import get_package_ba
-from Paket/xtra_combo_flex import get_package_xcf
+from bebas_puas import get_package_bebas
+from xtra_combo_mini import get_package_xcm
+from spesial_for_you import get_package_sfy
+from edukasi import get_package_edu
+from xtra_combo_old import get_package_xco
+from bonus_xcp import get_package_bxcp
+from xcp_xcv import get_package_xcpv
+from bonus_prepaid import get_package_bp
+from hotrod_baru import get_package_hb
+from pilkada_damai import get_package_pd
+from xl_reward import get_package_xr
+from bundling import get_package_bun
+from bonus_akrab import get_package_ba
+from xtra_combo_flex import get_package_xcf
 from paket_custom_family import get_packages_by_family
 from auth_helper import AuthInstance
 
