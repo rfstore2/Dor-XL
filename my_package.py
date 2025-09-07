@@ -1,6 +1,9 @@
 from api_request import get_package, send_api_request
 from ui import clear_screen, pause
 from auth_helper import AuthInstance
+from colorama import Fore, Style, init
+
+init(autoreset=True)
 
 # Fetch my packages
 def fetch_my_packages():
