@@ -72,7 +72,7 @@ def show_main_menu(number, balance, balance_expired_at):
         "[bright-green]17.[/], [bold-cyan]Bonus Akrab[/]",
         "[bright-green]18.[/], [bold-cyan]Xtra Combo Flex[/]",
         "[bright-green]19.[/], [bold-cyan]Family Code[/]",
-        "[bright-green]99.[/], [bold-cyan]Tutup Aplikasi[/]"
+        "[bright-green]99.[/], [bold-cyan]Tutup Aplikasi[/]",
         border_style="blue",
         padding=(1,2)
     )
