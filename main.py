@@ -11,6 +11,7 @@ from edukasi import get_package_edu
 from xtra_combo_old import get_package_xco
 from bonus_xcp import get_package_bxcp
 from xcp_xcv import get_package_xcpv
+from xcp_gift import get_package_xcpg
 from bonus_prepaid import get_package_bp
 from hotrod_baru import get_package_hb
 from pilkada_damai import get_package_pd
