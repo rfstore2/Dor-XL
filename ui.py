@@ -24,13 +24,9 @@ def pause():
     input("\nTekan Enter untuk lanjut...")
     
 def show_banner():
-#banner
- banner_rf = Panel(
-    "[bold cyan]Dor XL by RFSTORE[/]",
-    border_style="blue",
-    padding=(1, 2)
-)
-console.print(banner_rf)
+    print("--------------------------")
+    print("Dor XL by RFSTORE")
+    print("--------------------------")
     
 def show_main_menu(number, balance, balance_expired_at):
     clear_screen()
