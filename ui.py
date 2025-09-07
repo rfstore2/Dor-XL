@@ -74,8 +74,7 @@ def show_main_menu(number, balance, balance_expired_at):
         "[bright-green]19.[/], [bold-cyan]Family Code[/]",
         "[bright-green]99.[/], [bold-cyan]Tutup Aplikasi[/]",
         border_style="blue",
-        padding=(1,2)
-    )
+        padding=(1,2))
     console.print(menu_dor)
         
 def show_account_menu():
