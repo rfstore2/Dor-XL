@@ -6,6 +6,9 @@ from api_request import get_otp, submit_otp, save_tokens, get_package, purchase_
 from purchase_api import show_multipayment, show_qris_payment, settlement_bounty
 from auth_helper import AuthInstance
 from util import display_html
+from colorama import Fore, Style, init
+
+init(auto reset=True)
 
 def clear_screen():
     print("clearing screen...")
@@ -26,12 +29,12 @@ def show_main_menu(number, balance, balance_expired_at):
     expired_at = balance_expired_at
     expired_at_dt = datetime.fromtimestamp(expired_at).strftime("%Y-%m-%d %H:%M:%S")
     
-    print("\033[47m--------------------------")
-    print("Informasi Akun")
-    print(f"Nomor: {phone_number}")
-    print(f"Pulsa: Rp {remaining_balance}")
-    print(f"Masa aktif: {expired_at_dt}")
-    print("--------------------------\033[0m")
+    print(Fore.GREEN + "--------------------------")
+    print(Fore.GREEN + "Informasi Akun")
+    print(Fore.GREEN + f"Nomor: {phone_number}")
+    print(Fore.GREEN + f"Pulsa: Rp {remaining_balance}")
+    print(Fore.GREEN + f"Masa aktif: {expired_at_dt}")
+    print(Fore.GREEN + "--------------------------")
     print("Menu:")
     print("1. Login/Ganti akun")
     print("2. Lihat Paket Saya")
