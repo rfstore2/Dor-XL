@@ -32,9 +32,9 @@ def fetch_my_packages():
     quotas = res["data"]["quotas"]
     
     clear_screen()
-    print("===============================")
-    print("My Packages")
-    print("===============================")
+    print(Fore.GREEN + "===============================")
+    print(Fore.CYAN + "         My Packages           ")
+    print(Fore.GREEN + "===============================")
     num = 1
     for quota in quotas:
         quota_code = quota["quota_code"] # Can be used as option_code
@@ -47,13 +47,13 @@ def fetch_my_packages():
         if package_details:
             family_code = package_details["package_family"]["package_family_code"]
         
-        print("===============================")
-        print(f"Package {num}")
-        print(f"Name: {name}")
-        print(f"Quota Code: {quota_code}")
-        print(f"Family Code: {family_code}")
-        print(f"Group Code: {group_code}")
-        print("===============================")
+        print(Fore.GREEN + "===============================")
+        print(Fore.CYAN + f"Package {num}")
+        print(Fore.CYAN + f"Name: {name}")
+        print(Fore.CYAN + f"Quota Code: {quota_code}")
+        print(Fore.CYAN + f"Family Code: {family_code}")
+        print(Fore.CYAN + f"Group Code: {group_code}")
+        print(Fore.GREEN + "===============================")
         
         num += 1
         
