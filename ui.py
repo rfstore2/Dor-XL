@@ -8,7 +8,7 @@ from auth_helper import AuthInstance
 from util import display_html
 from colorama import Fore, Style, init
 
-init(auto reset=True)
+init(autoreset=True)
 
 def clear_screen():
     print("clearing screen...")
