@@ -36,7 +36,7 @@ def show_main_menu(number, balance, balance_expired_at):
     expired_at_dt = datetime.fromtimestamp(expired_at).strftime("%Y-%m-%d %H:%M:%S")
     
     #info akun
-    info_akun = Panel("\n".join(["[bold cyan]Nomor:[/]{phone_number}\n","[bold cyan]Pulsa:[/]{remaining_balance}\n","[bold cyan]Masa Aktif:[/]{expired_at}"]),
+    info_akun = Panel("\n".join([f"[bold cyan]Nomor:[/]{phone_number}\n",f"[bold cyan]Pulsa:[/]{remaining_balance}\n",f"[bold cyan]Masa Aktif:[/]{expired_at}"]),
         title="[bold white]Informasi Akun[/]",
         border_style="blue",
         padding=(1,2)
@@ -44,7 +44,7 @@ def show_main_menu(number, balance, balance_expired_at):
     console.print(info_akun)
     
     #menu
-    menu_dor = Panel("\n".join(["[bright-green] 1.[/], [bold-cyan]Login/Ganti akun[/]","[bright-green] 2.[/], [bold-cyan]Cek Kuota[/]","[bright-green] 3.[/], [bold-cyan]Xtra Unlimited Turbo[/]","[bright-green] 4.[/], [bold-cyan]Bebas Puas[/]","[bright-green] 5.[/], [bold-cyan]Xtra Combo Mini[/]","[bright-green] 6.[/], [bold-cyan]Spesial For you[/]","[bright-green] 7.[/], [bold-cyan]Edukasi[/]","[bright-green] 8.[/], [bold-cyan]Xtra Combo Old[/]","[bright-green] 9.[/], [bold-cyan]Bonus XCP[/]","[bright-green]10.[/], [bold-cyan]XCP & XCV[/]","[bright-green]11.[/], [bold-cyan]Bonus Prepaid[/]","[bright-green]12.[/], [bold-cyan]Hotrod Baru[/]","[bright-green]13.[/], [bold-cyan]Pilkada Damai[/]","[bright-green]14.[/], [bold-cyan]XL Reward[/]","[bright-green]15.[/], [bold-cyan]Bundling[/]","[bright-green]16.[/], [bold-cyan]XCP Gift[/]","[bright-green]17.[/], [bold-cyan]Bonus Akrab[/]","[bright-green]18.[/], [bold-cyan]Xtra Combo Flex[/]","[bright-green]19.[/], [bold-cyan]Family Code[/]","[bright-green]99.[/], [bold-cyan]Tutup Aplikasi[/]"]),
+    menu_dor = Panel("\n".join(["[bright-green] 1.[/] [bold-cyan]Login/Ganti akun[/]","[bright-green] 2.[/] [bold-cyan]Cek Kuota[/]","[bright-green] 3.[/] [bold-cyan]Xtra Unlimited Turbo[/]","[bright-green] 4.[/] [bold-cyan]Bebas Puas[/]","[bright-green] 5.[/] [bold-cyan]Xtra Combo Mini[/]","[bright-green] 6.[/] [bold-cyan]Spesial For you[/]","[bright-green] 7.[/] [bold-cyan]Edukasi[/]","[bright-green] 8.[/] [bold-cyan]Xtra Combo Old[/]","[bright-green] 9.[/] [bold-cyan]Bonus XCP[/]","[bright-green]10.[/] [bold-cyan]XCP & XCV[/]","[bright-green]11.[/] [bold-cyan]Bonus Prepaid[/]","[bright-green]12.[/] [bold-cyan]Hotrod Baru[/]","[bright-green]13.[/] [bold-cyan]Pilkada Damai[/]","[bright-green]14.[/] [bold-cyan]XL Reward[/]","[bright-green]15.[/] [bold-cyan]Bundling[/]","[bright-green]16.[/] [bold-cyan]XCP Gift[/]","[bright-green]17.[/] [bold-cyan]Bonus Akrab[/]","[bright-green]18.[/] [bold-cyan]Xtra Combo Flex[/]","[bright-green]19.[/] [bold-cyan]Family Code[/]","[bright-green]99.[/] [bold-cyan]Tutup Aplikasi[/]"]),
         title="[bold white]MENU[/]",
         border_style="blue",
         padding=(1,2)
