@@ -48,7 +48,7 @@ def show_main_menu(number, balance, balance_expired_at):
         border_style="blue",
         padding=(1,2)
     )
-    console.print(info_akun)\n
+    console.print(info_akun)
     
     #menu
     menu_dor = Panel(
