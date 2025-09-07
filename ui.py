@@ -52,7 +52,6 @@ def show_main_menu(number, balance, balance_expired_at):
     
     #menu
     menu_dor = Panel(
-        title="[bold white]MENU[/]",
         "[bright-green] 1.[/], [bold-cyan]Login/Ganti akun[/]",
         "[bright-green] 2.[/], [bold-cyan]Cek Kuota[/]",
         "[bright-green] 3.[/], [bold-cyan]Xtra Unlimited Turbo[/]",
@@ -73,8 +72,10 @@ def show_main_menu(number, balance, balance_expired_at):
         "[bright-green]18.[/], [bold-cyan]Xtra Combo Flex[/]",
         "[bright-green]19.[/], [bold-cyan]Family Code[/]",
         "[bright-green]99.[/], [bold-cyan]Tutup Aplikasi[/]",
+        title="[bold white]MENU[/]",
         border_style="blue",
-        padding=(1,2))
+        padding=(1,2)
+    )
     console.print(menu_dor)
         
 def show_account_menu():
