@@ -39,16 +39,34 @@ def show_main_menu(number, balance, balance_expired_at):
     info_akun = Panel("\n".join([f"[bold cyan]Nomor:[/]{phone_number}\n",f"[bold cyan]Pulsa:[/] Rp{remaining_balance}\n",f"[bold cyan]Masa Aktif:[/] {expired_at}"]),
         title="[bold white]INFORMASI AKUN[/]",
         border_style="blue",
-        box=box.ROUNDED,
+        box=box.HEAVY,
         padding=(1,2)
     )
     console.print(info_akun)
     
     #menu
-    menu_dor = Panel("\n".join(["[bright-green] 1.[/]", "[bold-cyan]Login/Ganti akun[/]\n", "[bright-green] 2.[/]", "[bold-cyan]Cek Kuota[/]\n", "[bright-green] 3.[/]", "[bold-cyan]Xtra Unlimited Turbo[/]\n", "[bright-green] 4.[/]", "[bold-cyan]Bebas Puas[/]\n", "[bright-green] 5.[/]", "[bold-cyan]Xtra Combo Mini[/]\n", "[bright-green] 6.[/]", "[bold-cyan]Spesial For you[/]\n", "[bright-green] 7.[/]", "[bold-cyan]Edukasi[/]\n", "[bright-green] 8.[/]", "[bold-cyan]Xtra Combo Old[/]\n", "[bright-green] 9.[/]", "[bold-cyan]Bonus XCP[/]\n", "[bright-green]10.[/]", "[bold-cyan]XCP & XCV[/]\n", "[bright-green]11.[/]", "[bold-cyan]Bonus Prepaid[/]\n", "[bright-green]12.[/]", "[bold-cyan]Hotrod Baru[/]\n", "[bright-green]13.[/]", "[bold-cyan]Pilkada Damai[/]\n", "[bright-green]14.[/]", "[bold-cyan]XL Reward[/]\n", "[bright-green]15.[/]", "[bold-cyan]Bundling[/]\n", "[bright-green]16.[/]", "[bold-cyan]XCP Gift[/]\n", "[bright-green]17.[/]", "[bold-cyan]Bonus Akrab[/]\n", "[bright-green]18.[/]", "[bold-cyan]Xtra Combo Flex[/]\n", "[bright-green]19.[/]", "[bold-cyan]Family Code[/]\n", "[bright-green]99.[/]", "[bold-cyan]Tutup Aplikasi[/]"]),
+    menu_dor = Panel("\n".join([
+"[bright-green] 1.[/] Login/Ganti akun[/]\n", 
+"[bright-green] 2.[/] Cek Kuota[/]\n", 
+"[bright-green] 3.[/] Xtra Unlimited Turbo[/]\n", "[bright-green] 4.[/] Bebas Puas[/]\n", 
+"[bright-green] 5.[/] Xtra Combo Mini[/]\n", 
+"[bright-green] 6.[/] Spesial For you[/]\n", "[bright-green] 7.[/] Edukasi[/]\n", 
+"[bright-green] 8.[/] Xtra Combo Old[/]\n",
+"[bright-green] 9.[/] Bonus XCP[/]\n", 
+"[bright-green]10.[/] XCP & XCV[/]\n", 
+"[bright-green]11.[/] Bonus Prepaid[/]\n", 
+"[bright-green]12.[/] Hotrod Baru[/]\n",
+"[bright-green]13.[/] Pilkada Damai[/]\n", 
+"[bright-green]14.[/] XL Reward[/]\n", 
+"[bright-green]15.[/] Bundling[/]\n", 
+"[bright-green]16.[/] XCP Gift[/]\n", 
+"[bright-green]17.[/] Bonus Akrab[/]\n", 
+"[bright-green]18.[/] Xtra Combo Flex[/]\n", 
+"[bright-green]19.[/] Family Code[/]\n", 
+"[bright-green]99.[/] Tutup Aplikasi[/]"]),
         title="[bold white]MENU[/]",
         border_style="purple",
-        box=box.ROUNDED,
+        box=box.HEAVY,
         padding=(1,2)
     )
     console.print(menu_dor)
