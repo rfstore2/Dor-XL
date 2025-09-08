@@ -57,6 +57,7 @@ def show_main_menu(number, balance, balance_expired_at):
     # Menggabungkan semuanya dalam satu panel besar
     panel_informasi_akun = Panel(
         Align.center(table_info),
+        title="[bold white]INFORMASI AKUN[/]", 
         box=box.HEAVY,
         border_style="bold blue",
         padding=(1,2)
@@ -64,10 +65,10 @@ def show_main_menu(number, balance, balance_expired_at):
     console.print(panel_informasi_akun)
     
     #menu
-    menu_teks1 = ("[bold green] 1.\n", " 2.\n", " 3.\n", " 4.\n", " 5.\n", " 6.\n", " 7.\n", " 8.\n", " 9.\n", "10.\n", "11.\n", "12.\n", "13.\n", "14.\n", "15.\n", "16.\n", "17.\n", "18.\n", "19.\n", "99.[/]"
+    menu_teks1 = ("\n".join(["[bold green] 1.", " 2.", " 3.", " 4.", " 5.", " 6.", " 7.", " 8.", " 9.", "10.", "11.", "12.", "13.", "14.", "15.", "16.", "17.", "18.", "19.", "99.[/]"])
     )
     
-    menu_teks2 = (
+    menu_teks2 = [
         "[bold blue]Xtra Unlimited Turbo\n", 
         "Bebas Puas\n", 
         "Xtra Combo Mini\n", 
@@ -88,7 +89,7 @@ def show_main_menu(number, balance, balance_expired_at):
         "Cek Kuota\n", 
         "Family Code\n", 
         "Exit[/]"
-    )
+    ]
     
     menu_table = Table(
         show_header=True, 
