@@ -57,7 +57,7 @@ def show_main_menu(number, balance, balance_expired_at):
     panel_informasi_akun = Panel(
         Align.center(table_info),
         box=box.HEAVY,
-        border_style="green"
+        border_style="bold green"
         padding=(1,2)
     )
     console.print(panel_informasi_akun)
