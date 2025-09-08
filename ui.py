@@ -53,16 +53,12 @@ def show_main_menu(number, balance, balance_expired_at):
     table_info.add_row("Pulsa", f"Rp{remaining_balance}")
     table_info.add_row("Masa Aktif", f"{expired_at_dt}")
 
-    # 2. Membuat panel untuk judul "INFORMASI AKUN"
-    judul_panel_info = Panel(
-        "[bold cyan]INFORMASI AKUN[/]",
-        box=box.ROUNDED,  # Border melengkung
-        border_style="bright_green"
-    )
     # 3. Menggabungkan semuanya dalam satu panel besar
-    panel_informasi_akun = Panel("\n\n".join([judul_panel_info, table_info]),
-        box=box.SIMPLE_HEAD,
-        border_style="bright_green"
+    panel_informasi_akun = Panel(
+        table_info,
+        title="[bold cyan]INFORMASI AKUN",
+        box=box.HEAVY,
+        border_style="bold green"
     )
     console.print(panel_informasi_akun)
 
