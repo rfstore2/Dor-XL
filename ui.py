@@ -38,15 +38,15 @@ def show_main_menu(number, balance, balance_expired_at):
     #info akun
     # 1. tabel untuk informasi akun
     table_info = Table(
-        show_header=False,
+        show_header=True, 
         box=box.MINIMAL_DOUBLE_HEAD,
         border_style="bright_green",
         width=40
     )
     
     # Menambahkan kolom
-    table_info.add_column("Kategori", style="bold cyan", no_wrap=True)
-    table_info.add_column("Detail", style="white", no_wrap=True)
+    table_info.add_column("Kategori", style="bold cyan")
+    table_info.add_column("Detail", style="white")
 
     # Menambahkan baris data
     table_info.add_row("Nomor", f"{phone_number}")
