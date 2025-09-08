@@ -66,7 +66,7 @@ def show_main_menu(number, balance, balance_expired_at):
         box=box.SIMPLE_HEAD,
         border_style="bright_green"
     )
-    console.print(panel_informasi_akun)
+    console.print(judul_panel_info, table_info)
     
     #menu
     menu_dor = Panel("\n".join([
