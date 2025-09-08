@@ -41,7 +41,7 @@ def show_main_menu(number, balance, balance_expired_at):
         show_header=False,
         box=box.MINIMAL_DOUBLE_HEAD,
         border_style="bright_green",
-        show_header=true
+        show_header=True
         padding=(0,2)
     )
     
