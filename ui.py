@@ -11,6 +11,7 @@ from rich.console import Console
 from rich.panel import Panel
 from rich.table import Table
 from rich import box
+from rich.align import Align
 
 console = Console()
 
@@ -55,11 +56,10 @@ def show_main_menu(number, balance, balance_expired_at):
 
     # 3. Menggabungkan semuanya dalam satu panel besar
     panel_informasi_akun = Panel(
-        table_info,
+        Align.center(table_info),
         title="[bold cyan]INFORMASI AKUN[/]",
         box=box.HEAVY,
         border_style="bold green",
-        justify="center"
     )
     console.print(panel_informasi_akun)
 
