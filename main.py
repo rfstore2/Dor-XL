@@ -37,95 +37,95 @@ def main():
             
             choice = input("Pilih menu: ")
             if choice == "1":
+                # XUT 
+                packages = get_package_xut()
+                
+                show_package_menu(packages)
+            elif choice == "2":
+                # Bebas Puas
+                packages = get_package_bebas()
+                
+                show_package_menu(packages)
+            elif choice == "3":
+                # Xtra Combo Mini
+                packages = get_package_xcm()
+                
+                show_package_menu(packages)
+            elif choice == "4":
+                # Spesial For you
+                packages = get_package_sfy()
+                
+                show_package_menu(packages)
+            elif choice == "5":
+                # Edukasi
+                packages = get_package_edu()
+                
+                show_package_menu(packages)
+            elif choice == "6":
+                # Xtra Combo Old
+                packages = get_package_xco()
+                
+                show_package_menu(packages)
+            elif choice == "7":
+                # Bonus XCP
+                packages = get_package_bxcp()
+                
+                show_package_menu(packages)
+            elif choice == "8":
+                # XCP & XCV
+                packages = get_package_xcpv()
+                
+                show_package_menu(packages)
+            elif choice == "9":
+                # Bonus Prepaid
+                packages = get_package_bp()
+                
+                show_package_menu(packages)
+            elif choice == "10":
+                # Hotrod Baru
+                packages = get_package_hb()
+                
+                show_package_menu(packages)
+            elif choice == "11":
+                # Pilkada Damai
+                packages = get_package_pd()
+                
+                show_package_menu(packages)
+            elif choice == "12":
+                # XL Reward
+                packages = get_package_xr()
+                
+                show_package_menu(packages)
+            elif choice == "13":
+                # Bundling
+                packages = get_package_bun()
+                
+                show_package_menu(packages)
+            elif choice == "14":
+                # XCP Gift
+                packages = get_package_xcpg()
+                
+                show_package_menu(packages)
+            elif choice == "15":
+                # Bonus Akrab
+                packages = get_package_ba()
+                
+                show_package_menu(packages)
+            elif choice == "16":
+                # Xtra Combo Flex
+                packages = get_package_xcf()
+                
+                show_package_menu(packages)
+            elif choice == "17":
                 selected_user_number = show_account_menu()
                 if selected_user_number:
                     AuthInstance.set_active_user(selected_user_number)
                 else:
                     print("No user selected or failed to load user.")
                 continue
-            elif choice == "2":
+            elif choice == "18":
                 fetch_my_packages()
                 continue
-            elif choice == "3":
-                # XUT 
-                packages = get_package_xut()
-                
-                show_package_menu(packages)
-            elif choice == "4":
-                # Bebas Puas
-                packages = get_package_bebas()
-                
-                show_package_menu(packages)
-            elif choice == "5":
-                # Xtra Combo Mini
-                packages = get_package_xcm()
-                
-                show_package_menu(packages)
-            elif choice == "6":
-                # Spesial For you
-                packages = get_package_sfy()
-                
-                show_package_menu(packages)
-            elif choice == "7":
-                # Edukasi
-                packages = get_package_edu()
-                
-                show_package_menu(packages)
-            elif choice == "8":
-                # Xtra Combo Old
-                packages = get_package_xco()
-                
-                show_package_menu(packages)
-            elif choice == "9":
-                # Bonus XCP
-                packages = get_package_bxcp()
-                
-                show_package_menu(packages)
-            elif choice == "10":
-                # XCP & XCV
-                packages = get_package_xcpv()
-                
-                show_package_menu(packages)
-            elif choice == "11":
-                # Bonus Prepaid
-                packages = get_package_bp()
-                
-                show_package_menu(packages)
-            elif choice == "12":
-                # Hotrod Baru
-                packages = get_package_hb()
-                
-                show_package_menu(packages)
-            elif choice == "13":
-                # Pilkada Damai
-                packages = get_package_pd()
-                
-                show_package_menu(packages)
-            elif choice == "14":
-                # XL Reward
-                packages = get_package_xr()
-                
-                show_package_menu(packages)
-            elif choice == "15":
-                # Bundling
-                packages = get_package_bun()
-                
-                show_package_menu(packages)
-            elif choice == "16":
-                # XCP Gift
-                packages = get_package_xcpg()
-                
-                show_package_menu(packages)
-            elif choice == "17":
-                # Bonus Akrab
-                packages = get_package_ba()
-                
-                show_package_menu(packages)
-            elif choice == "18":
-                # Xtra Combo Flex
-                packages = get_package_xcf()
-                
-                show_package_menu(packages)
             elif choice == "19":
                 family_code = input("Enter family code (or '99' to cancel): ")
                 if family_code == "99":
