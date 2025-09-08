@@ -41,7 +41,7 @@ def show_main_menu(number, balance, balance_expired_at):
         show_header=False,
         box=box.DOUBLE,
         border_style="bright_green",
-        padding=(0,2)
+        padding=(8,2)
     )
     
     # Menambahkan kolom
