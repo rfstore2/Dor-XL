@@ -36,7 +36,11 @@ def show_main_menu(number, balance, balance_expired_at):
     expired_at_dt = datetime.fromtimestamp(expired_at).strftime("%Y-%m-%d %H:%M:%S")
     
     #info akun
-    info_akun = Panel("\n".join([f"[bold cyan]Nomor:[/] {phone_number}\n",f"[bold cyan]Pulsa:[/] Rp{remaining_balance}\n",f"[bold cyan]Masa Aktif:[/] {expired_at}"]),
+    info_akun = Panel("\n".join([
+f"[bold cyan]Nomor:[/] {phone_number}\n",
+f"[bold cyan]Pulsa:[/] Rp{remaining_balance}\n",
+f"[bold cyan]Masa Aktif:[/] {expired_at_dt}"
+]),
         title="[bold white]INFORMASI AKUN[/]",
         border_style="blue",
         box=box.HEAVY,
