@@ -39,8 +39,8 @@ def show_main_menu(number, balance, balance_expired_at):
     # 1. tabel untuk informasi akun
     table_info = Table(
         show_header=False,
-        box=box.MINIMAL_DOUBLE_HEAD,
-        border_style="bold blue",
+        box=box.ROUNDED,
+        border_style="bold red",
         width=40
     )
     
@@ -57,22 +57,10 @@ def show_main_menu(number, balance, balance_expired_at):
     panel_informasi_akun = Panel(
         Align.center(table_info),
         box=box.HEAVY,
-        border_style="bold green"
+        border_style="bold blue",
         padding=(1,2)
     )
     console.print(panel_informasi_akun)
-    
-    info_akun = Panel("\n".join([
-f"[bold cyan]Nomor:[/] {phone_number}\n",
-f"[bold cyan]Pulsa:[/] Rp{remaining_balance}\n",
-f"[bold cyan]Masa Aktif:[/] {expired_at_dt}"
-]),
-        title="[bold white]INFORMASI AKUN[/]",
-        border_style="blue",
-        box=box.HEAVY,
-        padding=(1,2)
-    )
-    console.print(info_akun)
     
     #menu
     menu_teks1 = ("[bold green] 1.\n", " 2.\n", " 3.\n", " 4.\n", " 5.\n", " 6.\n", " 7.\n", " 8.\n", " 9.\n", "10.\n", "11.\n", "12.\n", "13.\n", "14.\n", "15.\n", "16.\n", "17.\n", "18.\n", "19.\n", "99.[/]"
