@@ -45,8 +45,8 @@ def show_main_menu(number, balance, balance_expired_at):
     )
     
     # Menambahkan kolom
-    table_info.add_column("Kategori", style="bold cyan")
-    table_info.add_column("Detail", style="white")
+    table_info.add_column("Kategori", style="bold cyan", no_wrap=True)
+    table_info.add_column("Detail", style="white", no_wrap=True)
 
     # Menambahkan baris data
     table_info.add_row("Nomor", f"{phone_number}")
