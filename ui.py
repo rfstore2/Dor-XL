@@ -39,9 +39,8 @@ def show_main_menu(number, balance, balance_expired_at):
     # 1. tabel untuk informasi akun
     table_info = Table(
         show_header=False,
-        box=box.MINIMAL_DOUBLE_HEAD,
+        box=box.DOUBLE,
         border_style="bright_green",
-        show_header=True
         padding=(0,2)
     )
     
