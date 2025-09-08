@@ -68,7 +68,7 @@ def show_main_menu(number, balance, balance_expired_at):
     menu_teks1 = ("\n".join(["[bold green] 1.", " 2.", " 3.", " 4.", " 5.", " 6.", " 7.", " 8.", " 9.", "10.", "11.", "12.", "13.", "14.", "15.", "16.", "17.", "18.", "19.", "99.[/]"])
     )
     
-    menu_teks2 = ([
+    menu_teks2 = ("\n".join([
         "[bold blue]Xtra Unlimited Turbo\n", 
         "Bebas Puas\n", 
         "Xtra Combo Mini\n", 
@@ -89,7 +89,7 @@ def show_main_menu(number, balance, balance_expired_at):
         "Cek Kuota\n", 
         "Family Code\n", 
         "Exit[/]"
-    ]) 
+    ])) 
     
     menu_table = Table(
         show_header=True, 
