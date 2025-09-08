@@ -59,7 +59,7 @@ def show_main_menu(number, balance, balance_expired_at):
         title="[bold cyan]INFORMASI AKUN",
         box=box.HEAVY,
         border_style="bold green",
-        padding=(2,2)
+        padding=(2,1)
     )
     console.print(panel_informasi_akun)
 
