@@ -65,11 +65,11 @@ def show_main_menu(number, balance, balance_expired_at):
     console.print(panel_informasi_akun)
     
     #menu
-    menu_teks1 = ("\n".join(["[bold green] 1.", " 2.", " 3.", " 4.", " 5.", " 6.", " 7.", " 8.", " 9.", "10.", "11.", "12.", "13.", "14.", "15.", "16.", "17.", "18.", "19.", "99.[/]"])
+    menu_teks1 = ("\n".join(["[bold red] 1.", " 2.", " 3.", " 4.", " 5.", " 6.", " 7.", " 8.", " 9.", "10.", "11.", "12.", "13.", "14.", "15.", "16.", "17.", "18.", "19.", "99.[/]"])
     )
     
     menu_teks2 = ("\n".join([
-        "[bold blue]Xtra Unlimited Turbo", 
+        "[bold cyan]Xtra Unlimited Turbo", 
         "Bebas Puas", 
         "Xtra Combo Mini", 
         "Spesial For you", 
@@ -85,7 +85,7 @@ def show_main_menu(number, balance, balance_expired_at):
         "XCP Gift", 
         "Bonus Akrab", 
         "Xtra Combo Flex", 
-        "Ganti Akun\n", 
+        "Ganti Akun", 
         "Cek Kuota", 
         "Family Code", 
         "Exit[/]"
