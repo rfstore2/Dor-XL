@@ -56,9 +56,10 @@ def show_main_menu(number, balance, balance_expired_at):
     # 3. Menggabungkan semuanya dalam satu panel besar
     panel_informasi_akun = Panel(
         table_info,
-        title="[bold cyan]INFORMASI AKUN",
+        title="[bold cyan]INFORMASI AKUN[/]",
         box=box.HEAVY,
         border_style="bold green",
+        justify="center"
     )
     console.print(panel_informasi_akun)
 
