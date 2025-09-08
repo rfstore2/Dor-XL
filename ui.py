@@ -36,17 +36,37 @@ def show_main_menu(number, balance, balance_expired_at):
     expired_at_dt = datetime.fromtimestamp(expired_at).strftime("%Y-%m-%d %H:%M:%S")
     
     #info akun
-    info_akun = Panel("\n".join([
-f"[bold cyan]Nomor:[/] {phone_number}\n",
-f"[bold cyan]Pulsa:[/] Rp{remaining_balance}\n",
-f"[bold cyan]Masa Aktif:[/] {expired_at_dt}"
-]),
-        title="[bold white]INFORMASI AKUN[/]",
-        border_style="blue",
-        box=box.HEAVY,
-        padding=(1,2)
+    # 1. tabel untuk informasi akun
+    table_info = Table(
+        show_header=False,
+        box=box.MINIMAL_DOUBLE_HEAD,
+        border_style="bright_green",
+        width=40
     )
-    console.print(info_akun)
+    
+    # Menambahkan kolom
+    table_info.add_column("Kategori", style="bold cyan")
+    table_info.add_column("Detail", style="white")
+
+    # Menambahkan baris data
+    table_info.add_row("Nomor", f"{phone_number}")
+    table_info.add_row("Pulsa", f"Rp{remaining_balance}")
+    table_info.add_row("Masa Aktif", f"{expired_at_dt}")
+
+    # 2. Membuat panel untuk judul "INFORMASI AKUN"
+    judul_panel_info = Panel(
+        "[bold cyan]INFORMASI AKUN[/]",
+        box=box.ROUNDED,  # Border melengkung
+        border_style="bright_green"
+    )
+
+    # 3. Menggabungkan semuanya dalam satu panel besar
+    panel_informasi_akun = Panel(
+        f"{judul_panel_info}\n\n{table_info}",
+        box=box.SIMPLE_HEAD,
+        border_style="bright_green"
+    )
+    console.print(panel_informasi_akun)
     
     #menu
     menu_dor = Panel("\n".join([
