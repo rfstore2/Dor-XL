@@ -59,9 +59,15 @@ def show_main_menu(number, balance, balance_expired_at):
         box=box.ROUNDED,  # Border melengkung
         border_style="bright_green"
     )
-    console.print(judul_panel_info)
-    console.print(table_info)
-    
+    # 3. Menggabungkan semuanya dalam satu panel besar
+    panel_informasi_akun = Panel(
+        judul_panel_info,
+        table_info,
+        box=box.SIMPLE_HEAD,
+        border_style="bright_green"
+    )
+    console.print(panel_informasi_akun)
+
     #menu
     menu_dor = Panel("\n".join([
 f"[bold green] 1.[/] Login/Ganti akun", 
