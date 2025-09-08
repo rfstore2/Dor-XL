@@ -40,7 +40,7 @@ def show_main_menu(number, balance, balance_expired_at):
         title="[bold white]INFORMASI AKUN[/]",
         border_style="blue",
         box=box.HEAVY,
-        padding=(5,5)
+        padding=(1,2)
     )
     console.print(info_akun)
     
