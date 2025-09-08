@@ -59,14 +59,8 @@ def show_main_menu(number, balance, balance_expired_at):
         box=box.ROUNDED,  # Border melengkung
         border_style="bright_green"
     )
-
-    # 3. Menggabungkan semuanya dalam satu panel besar
-    panel_informasi_akun = Panel(
-        f"{judul_panel_info}\n\n,{table_info}",
-        box=box.SIMPLE_HEAD,
-        border_style="bright_green"
-    )
-    console.print(panel_informasi_akun)
+    console.print(judul_panel_info)
+    console.print(table_info)
     
     #menu
     menu_dor = Panel("\n".join([
